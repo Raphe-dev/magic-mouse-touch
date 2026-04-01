@@ -131,32 +131,6 @@ A tap is recognised when:
 
 Clicks are posted as `CGEvent` pairs (mouseDown + mouseUp) via `CGEventPost(.cghidEventTap)`. The `clickCount` field is set to `2` for the second tap of a double-click, matching what macOS itself produces.
 
-### File structure
-
-```
-magicmousetouchcontrols/
-├── MultitouchSupport.h          # C struct definitions for private framework types
-├── MultitouchBridge.h/.m        # ObjC: dlopen, register callbacks, throttle, dispatch
-├── TouchManager.swift           # Tap detection: duration, movement, pressure, debounce
-├── ClickInjector.swift          # CGEvent injection for left/right/double clicks
-├── AppSettings.swift            # UserDefaults-backed settings + RightClickMode enum
-├── SettingsView.swift           # SwiftUI menu-bar popover UI
-├── PermissionsManager.swift     # AXIsProcessTrusted polling + permission prompts
-└── magicmousetouchcontrolsApp.swift  # MenuBarExtra entry point + AppDelegate
-```
-
----
-
-## Contributing
-
-Pull requests are welcome. A few things to keep in mind:
-
-- **No App Sandbox** — any feature that requires sandboxing is a non-starter
-- **No new dependencies** — the whole point is a lightweight, zero-dependency utility
-- **Private API surface** — `MultitouchSupport` structs are reverse-engineered; changes to macOS can shift field offsets. If something breaks on a new macOS version, the `MTTouch` layout in `MultitouchSupport.h` is the first place to check
-- The 4-byte implicit padding between `frame` (int32) and `timestamp` (double) in `MTTouch` is load-bearing — do not remove it
-
----
 
 ## License
 

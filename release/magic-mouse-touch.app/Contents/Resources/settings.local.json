@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebSearch",
+      "WebFetch(domain:gist.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:gist.githubusercontent.com)",
+      "Bash(xcodebuild -scheme magicmousetouchcontrols -configuration Debug build)",
+      "Bash(xcodebuild -scheme magicmousetouchcontrols -configuration Debug clean build)",
+      "Bash(defaults delete:*)"
+    ]
+  }
+}

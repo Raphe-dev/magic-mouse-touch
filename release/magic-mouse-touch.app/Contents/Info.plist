@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>25E246</string>
+	<key>CFBundleDisplayName</key>
+	<string>magic-mouse-touch</string>
+	<key>CFBundleExecutable</key>
+	<string>magic-mouse-touch</string>
+	<key>CFBundleIdentifier</key>
+	<string>Org.magicmousetouchcontrols</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>magic-mouse-touch</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>25E236</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>26.4</string>
+	<key>DTSDKBuild</key>
+	<string>25E236</string>
+	<key>DTSDKName</key>
+	<string>macosx26.4</string>
+	<key>DTXcode</key>
+	<string>2640</string>
+	<key>DTXcodeBuild</key>
+	<string>17E192</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>26.4</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAccessibilityUsageDescription</key>
+	<string>magic-mouse-touch needs Accessibility access to simulate mouse clicks when you tap the Magic Mouse surface.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSInputMonitoringUsageDescription</key>
+	<string>magic-mouse-touch needs Input Monitoring access to read touch gestures from your Magic Mouse.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

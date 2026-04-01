@@ -33,7 +33,16 @@ A free, open-source macOS menu-bar app that brings **tap-to-click** to the Apple
 
 ### Download (recommended)
 
-Download the latest release from the [Releases](../../releases) page, unzip, and move `magic-mouse-touch.app` to `/Applications`.
+1. Download `magic-mouse-touch-x.x.x.dmg` from the [Releases](../../releases) page.
+2. Open the `.dmg` file — a window will appear with the app.
+3. Drag `magic-mouse-touch.app` into your **Applications** folder.
+5. **First launch:** macOS will block the app because it is not notarized. Right-click (or Control-click) the app in Finder and choose **Open**, then confirm. You only need to do this once.
+ 
+   Alternatively, run this in Terminal after moving the app:
+   ```bash
+   xattr -cr /Applications/magic-mouse-touch.app
+   ```
+
 
 ### Build from source
 

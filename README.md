@@ -51,8 +51,7 @@ A free, open-source macOS menu-bar app that brings **tap-to-click** to the Apple
    git clone https://github.com/yourusername/magic-mouse-touch.git
    cd magic-mouse-touch
    ```
-2. Open `magicmousetouchcontrols/magicmousetouchcontrols.xcodeproj` in Xcode.
-3. Select your team in **Signing & Capabilities** if needed.
+2. Open `magicmousetouchcontrols` in Xcode.
 4. Build and run (**⌘R**).
 
 > **Note:** App Sandbox must remain **disabled** (`ENABLE_APP_SANDBOX = NO` in Build Settings). This is intentional — it is required to load `MultitouchSupport.framework` at runtime.
